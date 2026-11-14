@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>better formulas | Coming Soon</title>
+    <style>
+        /* Using Inter for that precise, clinical, and modern aesthetic */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Ultra-clean, slightly cool white for a sterile/clinical feel */
+            background-color: #FBFBFC; 
+            color: #111111;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Subtle radial gradient for depth without clutter */
+            background-image: radial-gradient(circle at center, #FFFFFF 0%, #F4F4F6 100%);
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        h1 {
+            font-weight: 200;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            /* Tight letter spacing gives a sleek, high-end scientific look */
+            letter-spacing: -0.04em; 
+            margin-bottom: 0.1em;
+            color: #0A0A0A;
+        }
+
+        .divider {
+            width: 0px;
+            height: 1px;
+            background-color: #D1D1D6; /* Cool, clinical gray */
+            margin: 1.5rem auto;
+            animation: expandLine 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 0.75rem;
+            /* Wide tracking contrasts the tight heading for a premium finish */
+            letter-spacing: 0.4em; 
+            text-transform: uppercase;
+            color: #8E8E93;
+            opacity: 0;
+            animation: fadeIn 1.2s ease 1s forwards;
+            margin-left: 0.4em; /* Optically center due to wide letter-spacing */
+        }
+
+        /* Smooth, premium animations */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expandLine {
+            to {
+                width: 60px;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>better formulas</h1>
+        <div class="divider"></div>
+        <p>Coming Soon!</p>
+    </div>
+</body>
+</html>
